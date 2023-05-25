@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="loader.js"></script>
+    <script src="main.js"></script>
+    <title>Sklep - Fotograficzny</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="loader"></div>
+    </div>
+    <header>
+      <h1>Lenses Shop</h1>
+    </header>
+
+    <div id="content">
+      <main>
+        <div class="container">
+          <div class="products">
+            <img
+              class="medium-short scale"
+              src="./photos/samyang_35mm.png"
+              alt="Samyang f1.4 35mm photo lens"
+            />
+            <p class="desc">Obiektyw Samyang 35mm f1.4</p>
+            <p class="desc">Cena: 1790 PLN</p>
+            <label for="sam">Wybierz ilość</label>
+            <input type="number" name="sam" id="sam" class="input" />
+          </div>
+
+          <div class="products">
+            <img
+              class="scale"
+              src="./photos/zeiss_55mm.png"
+              alt="Zeiss f1.4 55mm photo lens"
+            />
+            <p class="desc">Obiektyw Zeiss 55mm f1.4</p>
+            <p class="desc">Cena: 18 800 PLN</p>
+            <label for="zei">Wybierz ilość</label>
+            <input type="number" name="zei" id="zeis" class="input" />
+          </div>
+
+          <div class="products">
+            <img
+              class="medium scale"
+              src="./photos/Sony_135mm.png"
+              alt="Sony f1.8 135mm photo lens"
+            />
+            <p class="desc">Obiektyw Sony 135mm f1.8</p>
+            <p class="desc">Cena: 7940 PLN</p>
+            <label for="sony">Wybierz ilość</label>
+            <input type="number" name="sony" id="sony" class="input" />
+          </div>
+
+          <div class="products">
+            <img
+              class="long scale"
+              src="./photos/canon-400mm.png"
+              alt="Canon f4 400mm photo lens"
+            />
+            <p class="desc">Obiektyw Canon 400mm f4</p>
+            <p class="desc">Cena: 32 800 PLN</p>
+            <label for="canon">Wybierz ilość</label>
+            <input type="number" name="canon" id="canon" class="input" />
+          </div>
+        </div>
+        <br />
+        <label for="imie">Imie</label>
+        <input type="text" name="imie" id="imie" class="input" />
+        <label for="nazwisko">Nazwisko</label>
+        <input
+          type="text"
+          name="nazwisko"
+          id="nazwisko"
+          class="input"
+        /><br /><br />
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email" class="input" />
+        <label for="adres">Adres</label>
+        <input type="text" name="adres" id="adres" class="input" />
+        <input
+          class="btn"
+          type="button"
+          value="Zamów"
+          onclick="dane(), produkty()"
+        /><br /><br />
+
+        <div id="dane"></div>
+        <br />
+        <div id="stuff"></div>
+      </main>
+
+      <footer>
+        <div class="contact">
+          <p>Adres: Tarczyńska 3A, 02-025 Warszawa</p>
+          <p>Numer kontaktowy: 22 822 73 16</p>
+          <p>
+            Studio fotograficzne:
+            <a
+              href="https://fotofotka.pl"
+              target="_blank"
+              rel="noopener noreferrer"
+              >FotoFotka</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
