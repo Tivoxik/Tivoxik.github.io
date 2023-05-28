@@ -83,6 +83,46 @@
         <input type="text" name="email" id="email" class="input" />
         <label for="adres">Adres</label>
         <input type="text" name="adres" id="adres" class="input" />
+        /><br /><br />
+        <label for="email">E-mail</label>
+        <input type="radio" name="email" id="email" class="input" />
+        <label for="adres">Adres</label>
+        <input type="radio" name="adres" id="adres" class="input" />
+
+        <form action="">
+          <label>
+            <input type="radio" name="payment_method" value="credit_card" />
+            Karta kredytowa
+          </label>
+
+          <label>
+            <input type="radio" name="payment_method" value="paypal" />
+            PayPal
+          </label>
+
+          <label>
+            <input type="radio" name="payment_method" value="bank_transfer" />
+            Przelew bankowy
+          </label>
+        </form>
+
+        <form action="">
+          <label>
+            <input type="radio" name="shipping_method" value="kurier" />
+            Kurier DPD
+          </label>
+
+          <label>
+            <input type="radio" name="shipping_method" value="inpost" />
+            Paczkomat InPost
+          </label>
+
+          <label>
+            <input type="radio" name="shipping_method" value="odbior" />
+            Odbiór osobisty
+          </label>
+        </form>
+
         <input
           class="btn"
           type="button"
