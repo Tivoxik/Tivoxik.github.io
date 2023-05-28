@@ -24,7 +24,7 @@ function produkty() {
     const canoncena = 32800
     const cenacanon = (zeis*canoncena)
 
-    let produkty = document.getElementById('stuff').innerHTML = "Twoje produty to: " + "Samyang sztuk " +samyang+" o łącznej wartości: "+cenasam+", Zeis sztuk " +zeis+" o łącznej wartości: "+cenazeis+", Sony sztuk " +sony+" o łącznej wartości: "+cenasony+", Canon sztuk " +canon+" o łącznej wartości: "+cenacanon
+    let produkty = document.getElementById('stuff').innerHTML = "Twoje produty to: " + "Samyang sztuk " +samyang+" o łącznej wartości: "+cenasam+", Zeiss sztuk " +zeis+" o łącznej wartości: "+cenazeis+", Sony sztuk " +sony+" o łącznej wartości: "+cenasony+", Canon sztuk " +canon+" o łącznej wartości: "+cenacanon
 
 };
 
