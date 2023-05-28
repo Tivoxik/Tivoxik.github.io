@@ -83,42 +83,67 @@
         <input type="text" name="email" id="email" class="input" />
         <label for="adres">Adres</label>
         <input type="text" name="adres" id="adres" class="input" />
-        /><br /><br />
-        <label for="email">E-mail</label>
-        <input type="radio" name="email" id="email" class="input" />
-        <label for="adres">Adres</label>
-        <input type="radio" name="adres" id="adres" class="input" />
 
         <form action="">
           <label>
-            <input type="radio" name="payment_method" value="credit_card" />
+            <input
+              type="radio"
+              name="payment_method"
+              value="credit_card"
+              id="credit"
+            />
             Karta kredytowa
           </label>
 
           <label>
-            <input type="radio" name="payment_method" value="paypal" />
+            <input
+              type="radio"
+              name="payment_method"
+              value="paypal"
+              id="paypal"
+            />
             PayPal
           </label>
 
           <label>
-            <input type="radio" name="payment_method" value="bank_transfer" />
+            <input
+              type="radio"
+              name="payment_method"
+              value="bank_transfer"
+              id="transfer"
+            />
             Przelew bankowy
           </label>
         </form>
 
         <form action="">
           <label>
-            <input type="radio" name="shipping_method" value="kurier" />
+            <input
+              type="radio"
+              name="shipping_method"
+              value="kurier"
+              id="kurier"
+            />
             Kurier DPD
           </label>
 
           <label>
-            <input type="radio" name="shipping_method" value="inpost" />
+            <input
+              type="radio"
+              name="shipping_method"
+              value="inpost"
+              id="inpost"
+            />
             Paczkomat InPost
           </label>
 
           <label>
-            <input type="radio" name="shipping_method" value="odbior" />
+            <input
+              type="radio"
+              name="shipping_method"
+              value="odbior"
+              id="odbior"
+            />
             Odbiór osobisty
           </label>
         </form>
@@ -127,12 +152,16 @@
           class="btn"
           type="button"
           value="Zamów"
-          onclick="dane(), produkty()"
+          onclick="dane(), produkty(), method()"
         /><br /><br />
 
         <div id="dane"></div>
         <br />
         <div id="stuff"></div>
+        <br />
+        <div id="metoda"></div>
+        <br />
+        <div id="wysylka"></div>
       </main>
 
       <footer>

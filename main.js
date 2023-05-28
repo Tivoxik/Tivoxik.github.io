@@ -27,3 +27,28 @@ function produkty() {
     let produkty = document.getElementById('stuff').innerHTML = "Twoje produty to: " + "Samyang sztuk " +samyang+" o łącznej wartości: "+cenasam+", Zeis sztuk " +zeis+" o łącznej wartości: "+cenazeis+", Sony sztuk " +sony+" o łącznej wartości: "+cenasony+", Canon sztuk " +canon+" o łącznej wartości: "+cenacanon
 
 };
+
+function method() {
+
+    if (condition) {
+        
+    }
+
+
+
+
+    const credit = parseInt(document.getElementById("credit").value);
+
+    const paypal = parseInt(document.getElementById("paypal").value);
+
+    const transfer = parseInt(document.getElementById("transfer").value);
+
+    const kurier = parseInt(document.getElementById("kurier").value);
+
+    const inpost = parseInt(document.getElementById("inpost").value);
+
+    const odbior = parseInt(document.getElementById("odbior").value);
+
+    // let metoda_pl = document.getElementById("metoda").innerHTML = 'Wybrana metoda płatności:' + selectedPayment;
+    // let wysylka = document.getElementById("wysylka").innerHTML = 'Wybrana metoda dostawy:' + selectedShipping;
+};
