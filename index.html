@@ -15,7 +15,12 @@
       <div id="loader"></div>
     </div>
     <header>
-      <h1>Lenses Shop</h1>
+      <!-- <h1>Lenses Shop</h1> -->
+      <img
+        src="./photos/Lenses_shop-logo.svg"
+        alt="Lenses shop logo"
+        class="header-logo"
+      />
     </header>
 
     <div id="content">
@@ -84,68 +89,72 @@
         <label for="adres">Adres</label>
         <input type="text" name="adres" id="adres" class="input" />
 
-        <form action="">
-          <label>
-            <input
-              type="radio"
-              name="payment_method"
-              value="credit_card"
-              id="credit"
-            />
-            Karta kredytowa
-          </label>
+        <form class="mydict">
+          <div>
+            <label>
+              <input
+                type="radio"
+                name="payment_method"
+                value="credit_card"
+                id="credit"
+              />
+              <span>Karta kredytowa</span>
+            </label>
 
-          <label>
-            <input
-              type="radio"
-              name="payment_method"
-              value="paypal"
-              id="paypal"
-            />
-            PayPal
-          </label>
+            <label>
+              <input
+                type="radio"
+                name="payment_method"
+                value="paypal"
+                id="paypal"
+              />
+              <span>PayPal</span>
+            </label>
 
-          <label>
-            <input
-              type="radio"
-              name="payment_method"
-              value="bank_transfer"
-              id="transfer"
-            />
-            Przelew bankowy
-          </label>
+            <label>
+              <input
+                type="radio"
+                name="payment_method"
+                value="bank_transfer"
+                id="transfer"
+              />
+              <span>Przelew bankowy</span>
+            </label>
+          </div>
         </form>
 
-        <form action="">
-          <label>
-            <input
-              type="radio"
-              name="shipping_method"
-              value="kurier"
-              id="kurier"
-            />
-            Kurier DPD
-          </label>
+        <form class="mydict">
+          <div>
+            <label>
+              <input
+                type="radio"
+                name="shipping_method"
+                value="kurier"
+                id="kurier"
+              />
+              <span>Kurier DPD</span>
+            </label>
 
-          <label>
-            <input
-              type="radio"
-              name="shipping_method"
-              value="inpost"
-              id="inpost"
-            />
-            Paczkomat InPost
-          </label>
+            <label>
+              <input
+                type="radio"
+                name="shipping_method"
+                value="inpost"
+                id="inpost"
+              />
+              <span>Paczkomat InPost</span>
+            </label>
 
-          <label>
-            <input
-              type="radio"
-              name="shipping_method"
-              value="odbior"
-              id="odbior"
-            />
-            Odbiór osobisty
-          </label>
+            <label>
+              <input
+                type="radio"
+                name="shipping_method"
+                value="odbior"
+                id="odbior"
+              />
+              <span>Odbiór osobisty</span>
+            </label>
+          </div>
         </form>
 
         <input
@@ -177,6 +186,17 @@
               >FotoFotka</a
             >
           </p>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216.03040300431027!2d20.989007012282308!3d52.22331001307474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc971e53e5e9%3A0xa9a48ac17334bd83!2sFOT-KA%20zak%C5%82ad%20fotograficzny!5e0!3m2!1spl!2spl!4v1685286277786!5m2!1spl!2spl"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </footer>
     </div>
