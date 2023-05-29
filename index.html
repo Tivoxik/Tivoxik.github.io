@@ -76,20 +76,39 @@
         </div>
         <br />
         <label for="imie">Imie</label>
-        <input type="text" name="imie" id="imie" class="input" />
+        <input
+          type="text"
+          name="imie"
+          id="imie"
+          class="input"
+          placeholder="Jan"
+        />
         <label for="nazwisko">Nazwisko</label>
         <input
           type="text"
           name="nazwisko"
           id="nazwisko"
           class="input"
+          placeholder="Kowalski"
         /><br /><br />
         <label for="email">E-mail</label>
-        <input type="text" name="email" id="email" class="input" />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input"
+          placeholder="email@email.com"
+        />
         <label for="adres">Adres</label>
-        <input type="text" name="adres" id="adres" class="input" />
+        <input
+          type="text"
+          name="adres"
+          id="adres"
+          class="input"
+          placeholder="Przeworsk 215"
+        />
 
-        <form class="mydict">
+        <form class="payment">
           <div>
             <label>
               <input
@@ -123,7 +142,7 @@
           </div>
         </form>
 
-        <form class="mydict">
+        <form class="ship">
           <div>
             <label>
               <input
@@ -161,7 +180,7 @@
           class="btn"
           type="button"
           value="Zamów"
-          onclick="dane(), produkty(), method()"
+          onclick="dane(), produkty(), method(), method2()"
         /><br /><br />
 
         <div id="dane"></div>
@@ -169,7 +188,6 @@
         <div id="stuff"></div>
         <br />
         <div id="metoda"></div>
-        <br />
         <div id="wysylka"></div>
       </main>
 

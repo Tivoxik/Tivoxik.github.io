@@ -19,36 +19,55 @@ function produkty() {
     const cenazeis = (zeis*zeiscena)
     const sony = parseInt(document.getElementById("sony").value);
     const sonycena = 7940
-    const cenasony = (zeis*sonycena)
+    const cenasony = (sony*sonycena)
     const canon = parseInt(document.getElementById("canon").value);
     const canoncena = 32800
-    const cenacanon = (zeis*canoncena)
+    const cenacanon = (canon*canoncena)
 
-    let produkty = document.getElementById('stuff').innerHTML = "Twoje produty to: " + "Samyang sztuk " +samyang+" o łącznej wartości: "+cenasam+", Zeiss sztuk " +zeis+" o łącznej wartości: "+cenazeis+", Sony sztuk " +sony+" o łącznej wartości: "+cenasony+", Canon sztuk " +canon+" o łącznej wartości: "+cenacanon
+    const cena = (cenasam+cenazeis+cenasony+cenacanon)
+
+    let produkty = document.getElementById('stuff').innerHTML = "Twoje produty to: "+"<br>"+ "Samyang sztuk " +samyang+" o łącznej wartości: "+cenasam+"<br>"+"Zeiss sztuk " +zeis+" o łącznej wartości: "+cenazeis+"<br>"+"Sony sztuk " +sony+" o łącznej wartości: "+cenasony+"<br>"+"Canon sztuk " +canon+" o łącznej wartości: "+cenacanon+"<br>"+"łączna wartość twoich zakupów to: "+cena
 
 };
 
 function method() {
 
-    if (condition) {
-        
-    }ff
+    var payment = "" 
+    if(document.getElementById("credit").checked == true)
+    {
+        var payment = "Karta Kredytowa";
+    }
 
+    else if(document.getElementById("paypal").checked == true)
+    {
+        var payment= "Paypal";
+    }
 
+    else if(document.getElementById("transfer").checked == true)
+    {
+        var payment = "Przelew bankowy";
+    }
 
+    let platnosc = document.getElementById('metoda').innerHTML = "Twój sposób płatności to: " +payment
+};
 
-    const credit = parseInt(document.getElementById("credit").value);
+function method2() {
 
-    const paypal = parseInt(document.getElementById("paypal").value);
+    var wysylka = "" 
+    if(document.getElementById("kurier").checked == true)
+    {
+        var wysylka = "Kurier DPD";
+    }
 
-    const transfer = parseInt(document.getElementById("transfer").value);
+    else if(document.getElementById("inpost").checked == true)
+    {
+        var wysylka= "Paczkomat InPost";
+    }
 
-    const kurier = parseInt(document.getElementById("kurier").value);
+    else if(document.getElementById("odbior").checked == true)
+    {
+        var wysylka = "Odbiór osobisty";
+    }
 
-    const inpost = parseInt(document.getElementById("inpost").value);
-
-    const odbior = parseInt(document.getElementById("odbior").value);
-
-    // let metoda_pl = document.getElementById("metoda").innerHTML = 'Wybrana metoda płatności:' + selectedPayment;
-    // let wysylka = document.getElementById("wysylka").innerHTML = 'Wybrana metoda dostawy:' + selectedShipping;
+    let sposob = document.getElementById('wysylka').innerHTML = "Twój sposób dostawy to: " +wysylka
 };
