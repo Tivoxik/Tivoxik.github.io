@@ -277,3 +277,7 @@ label{
 ::-webkit-scrollbar-thumb:hover {
   background: #454545; 
 }
+
+.payment, .ship{
+  cursor: url('W11');
+}
